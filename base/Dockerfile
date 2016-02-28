@@ -8,7 +8,7 @@ ENV REFRESHED_AT 2016-02-27
 ## Actualizamos
 RUN \
     apt-get -qq update; apt-get upgrade -y -qq; \
-    apt-get install -y -qq wget curl git; \
+    apt-get install -y -qq wget curl git jq; \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ## Arreglamos el LOCALE
